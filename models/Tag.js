@@ -7,6 +7,24 @@ class Tag extends Model {}
 Tag.init(
   {
     // define columns
+
+    //id
+    id: {
+      //Integer
+      type: DataTypes.INTEGER,
+      //Doesn't allow null values
+      allowNull: false,
+      //Set as PK
+      primaryKey: true,
+      //Uses auto increment
+      autoIncrement: true,
+    },
+
+    //tag_name
+    tag_name: {
+      //String
+      type: DataTypes.STRING,
+    },
   },
   {
     sequelize,
